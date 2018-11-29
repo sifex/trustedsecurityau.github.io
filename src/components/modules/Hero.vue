@@ -2,14 +2,11 @@
     <section
         id="hero"
         :class="[ theme, {overflow, loaded} ]">
-        <div
-            v-if="image"
-            :style="{ backgroundImage: 'url(' + image + ')'}"
-            class="image"/>
-        <grat-parallax
-            :gp="gp"
-            :light="light"
-            class="gp"/>
+        <div :style="{ backgroundImage: 'url(' + backgroundImage + ')'}"
+             class="background-image"/>
+        <div v-if="image"
+             :style="{ backgroundImage: 'url(' + image + ')'}"
+             class="image"/>
         <div class="grid-container">
             <energy v-if="energy"/>
             <div v-if="headerPadding"
@@ -53,16 +50,6 @@ export default {
         GratParallax,
         Energy
     },
-    data: function() {
-    	return {
-    		loaded: false
-        }
-    },
-    mounted: function() {
-    	setTimeout(() => {
-    		this.loaded = true
-        }, 100)
-    },
     props: {
         center: {
             type: Boolean,
@@ -104,6 +91,10 @@ export default {
             type: String,
             default: ''
         },
+        backgroundImage: {
+            type: String,
+            default: ''
+        },
         featureImage: {
             type: String,
             default: ''
@@ -112,6 +103,16 @@ export default {
             type: Boolean,
             default: false
         }
+    },
+    data: function () {
+        return {
+            loaded: false
+        }
+    },
+    mounted: function () {
+        setTimeout(() => {
+            this.loaded = true
+        }, 100)
     }
 }
 </script>
@@ -124,6 +125,17 @@ export default {
         position: relative;
         overflow: hidden;
 
+        .background-image {
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.1;
+        }
         .grid-container {
             // z-index: 0;
             position: relative;
@@ -238,8 +250,6 @@ export default {
 
                 }
             }
-
-
 
             h1, h2, h3, h4, h5, h6 {
                 color: $white;

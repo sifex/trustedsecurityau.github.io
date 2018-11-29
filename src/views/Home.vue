@@ -3,7 +3,7 @@
         <header-view/>
         <Hero
             center
-
+            :background-image="'/img/home/Wormhole_3.jpg'"
             :gp="true">
             <h3>Australia's Leading</h3>
             <h1>Cyber Security Company</h1>
