@@ -1,0 +1,97 @@
+
+{
+	"management": [
+		{
+			"title": "SOC Manager",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": true
+		},
+		{
+			"title": "Project Manager",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": false,
+			"priority": true
+		},
+		{
+			"title": "Service Delivery Manager",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": true
+		}
+	],
+	"analysts": [
+		{
+			"title": "Snr. Security Analyst",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": true
+		},
+		{
+			"title": "Security Analyst",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": false,
+			"priority": false
+		},
+		{
+			"title": "Jnr. Security Analyst",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": false,
+			"priority": false
+		}
+	],
+	"engineers": [
+		{
+			"title": "Snr. Security Engineer",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": true
+		},
+		{
+			"title": "Security Engineer",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": false
+		},
+		{
+			"title": "Jnr. Security Engineer",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": false,
+			"priority": false
+		}
+	],
+	"penetration testers": [
+		{
+			"title": "Penetration Tester",
+			"location": "Sydney, NSW",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": false
+		},
+		{
+			"title": "Penetration Tester",
+			"location": "Melbourne, VIC",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": false
+		}
+	],
+	"consultant": [
+		{
+			"title": "Snr. Security Consultants",
+			"location": "Canberra, ACT",
+			"link": "mailto:work@tsscyber.com.au",
+			"hiring": true,
+			"priority": false
+		}
+	]
+}
